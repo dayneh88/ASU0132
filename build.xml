@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="asu0132" default="staging" basedir=".">
+    <target name="staging">
+        <property name="user" value="${user.name}"/>
+        <property name="address" value="54.206.87.209"/>
+        <property name="path" value="/var/www/staging/asu/asu0132/"/>
+        <exec dir="${basedir}" executable="rsync" failonerror="true">
+            <arg line="--exclude-from .antignore"/>
+            <arg line="--group=www-data" />
+            <arg line="--chmod=ug=rwX,o-rwX" />
+            <arg line="--delete -rlOvc -e ssh ./ ${user}@${address}:${path}"/>
+        </exec>
+    </target>
+</project>
