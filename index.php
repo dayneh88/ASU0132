@@ -13,7 +13,7 @@
 
   <header class="header container">
     <section class="col-one">
-      <a href="http://tools.australiansuper.com/income" class="logo">
+      <a href="https://www.australiansuper.com/" class="logo">
           <img src="http://tools.australiansuper.com/income/site/wp-content/themes/australiansuper/assets/images/australian-super-logo.png" alt="AustralianSuper" width="267" height="66">
       </a>
     </section>
@@ -21,7 +21,7 @@
       <div>
         <div class="website-tools" role="search">
           <ul class="web-tool-btns">
-            <li class="home"><a id="" title="Home" href="/">Home</a></li>
+            <li class="home"><a id="" title="Home" href="https://www.australiansuper.com/">Home</a></li>
             <li class="contact"><a id="" title="Contact Us" href="http://www.australiansuper.com/about-us/contact-us.aspx?cmpid=ip-income-jun14-001" target="_blank">Contact Us</a></li>
             <li class="email"><a id="" title="Email Us" href="http://www.australiansuper.com/about-us/email-us.aspx" target="_blank">Email</a></li>
             <li class="search">
