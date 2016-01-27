@@ -529,11 +529,13 @@ main {
     margin: 0 auto;
     line-height: 1.3;
   }
-  .london-svg {
+  .london-svg,
+  .london-svg-static {
     max-width: 55em;
     width: 100%;
     position: relative;
     margin: 2em auto;
+    z-index: 1;
     img {
       width: 100%;
       display: block;
@@ -587,6 +589,40 @@ main {
       animation-iteration-count: infinite;
       animation-timing-function: linear;
     }
+  }
+  .london-svg {
+    body.ie11 & {
+      display: none !important;
+    }
+  }
+  .london-svg-static {
+    display: none;
+    body.ie11 & {
+      display: block;
+    }
+  }
+  // Wheel animation
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .wheel {
+    width: 27%;
+    height: 0;
+    padding-top: 27%;
+    background-image: url($image-path + 'wheel.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 19.4%;
+    right: 11.4%;
+    animation: spin 12s infinite linear;
+    transform-origin: 50% 50%;
+    z-index: -1;
   }
 
   .button {

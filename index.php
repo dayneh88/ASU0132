@@ -233,7 +233,7 @@
                 </a>
               </li>
               <li class="col">
-                <a href="`http://www.australiansuper.com/investments-and-performance/pension-investment-choices.aspx" target="_blank">
+                <a href="http://www.australiansuper.com/investments-and-performance/pension-investment-choices.aspx" target="_blank">
                   <h3 class="link-title">Pension investment choices</h3>
                   <span class="link-desc">A range of investment options to choose from</span>
                 </a>
@@ -412,6 +412,9 @@
       <div class="london-svg">
         <?php include 'london-svg.php'; ?>
         <div class="wheel"></div>
+      </div>
+      <div class="london-svg-static">
+        <img src="/media/london-svg-static.svg" alt="London">
       </div>
     </section>
   </main>
