@@ -178,13 +178,6 @@ nav.main-nav {
       display: none;
     }
     &.small-menu {
-      
-    }
-  }
-}
-
-    /* line 918, scss/layout.scss */
-    nav.main-nav > ul.small-menu {
       background-color: #5f6a72;
       width: 100%;
       float: left;
@@ -192,7 +185,17 @@ nav.main-nav {
       display: inline;
       display: none;
       position: relative;
-      border-bottom: 1px solid #1c1c1c; }
+      border-bottom: 1px solid #1c1c1c;
+      &.visible-menu {
+        display: block;
+      }
+    }
+  }
+}
+
+    /* line 918, scss/layout.scss */
+    nav.main-nav > ul.small-menu {
+       }
       /* line 925, scss/layout.scss */
       nav.main-nav > ul.small-menu.visible-menu {
         display: block; }
