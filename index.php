@@ -408,7 +408,7 @@
     <section>
       <h1>Making the future <strong>matter.</strong></h1>
       <p>On behalf of our two million members, we invest more than $90 billion. One of the latest investments is King’s Cross: a bold architectural statement, a positive change for thousands and one of the biggest infrastructure projects in the world. It will define Londoners’ future and as part-owners, provide big benefits for our members.</p>
-      <a href="#" class="button">Find out more</a>
+      <a href="https://campaigns.australiansuper.com/itmatters/#/home" target="_blank" class="button">Find out more</a>
       <div class="london-svg">
         <?php include 'london-svg.php'; ?>
         <div class="wheel"></div>
