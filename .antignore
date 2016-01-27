@@ -1,0 +1,10 @@
+.git
+.gitmodules
+.gitignore
+.gitkeep
+node_modules
+build.xml
+.antignore
+.editorconfig
+README.md
+.DS_Store

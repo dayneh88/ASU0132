@@ -163,26 +163,26 @@ button {
   }
 }
 
-
 nav.main-nav {
-  max-width: 990px;
+  width: 990px;
   margin: 0 auto 8px;
-  background-color: #f0f0f0; }
-  /* line 902, scss/layout.scss */
-  nav.main-nav .jmenu-button {
-    color: #ffffff; }
-  /* line 906, scss/layout.scss */
-  nav.main-nav > ul {
-    display: none;
-    background-color: #ffffff;
-    position: relative; }
-    @media (min-width: 62.81275em) {
-      /* line 906, scss/layout.scss */
-      nav.main-nav > ul {
-        display: block; } }
-    /* line 914, scss/layout.scss */
-    nav.main-nav > ul .sub-menu, nav.main-nav > ul .sub-mega-menu {
-      display: none; }
+  background-color: #f0f0f0;
+  &.jmenu-button {
+    color: white;
+  }
+  > ul {
+    background-color: white;
+    position: relative;
+    .sub-menu,
+    .sub-mega-menu {
+      display: none;
+    }
+    &.small-menu {
+      
+    }
+  }
+}
+
     /* line 918, scss/layout.scss */
     nav.main-nav > ul.small-menu {
       background-color: #5f6a72;
@@ -477,16 +477,15 @@ nav.main-nav {
           width: 104px;
           background: url("http://tools.australiansuper.com/income/site/wp-content/themes/australiansuper/assets/images/nav-main.png") transparent -886px 0 no-repeat;
           background: none, url("http://tools.australiansuper.com/income/site/wp-content/themes/australiansuper/assets/images/nav-main.svg") transparent -886px 0 no-repeat;
-          -moz-background-size: 1094px 135px;
-          -o-background-size: 1094px 135px;
-          -webkit-background-size: 1094px 135px;
           background-size: 1094px 135px;
           color: #ffffff;
-          font-size: 1.14286em;
-          line-height: 1.625em;
-          line-height: 1.15em;
+          line-height: 1;
+          font-size: 16px;
           padding-left: 25px;
-          text-shadow: none; }
+          text-shadow: none;
+          padding-top: 15px;
+          padding-bottom: 14px;
+        }
           /* line 1211, scss/layout.scss */
           nav.main-nav > ul > li#nav_login a.top-level-item:hover {
             background-position: -886px -45px; }
