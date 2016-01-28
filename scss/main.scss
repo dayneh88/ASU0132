@@ -4,7 +4,7 @@
 @import 'foundation';
 
 body {
-  background-color: white;
+  background-color: #c6c9cb;
   color: white;
 }
 
@@ -14,9 +14,13 @@ button {
 }
 
 .header-wrapper {
-  width: 990px;
-  margin: 0 auto;
-  padding-top: 20px;
+  background-color: white;
+  .container {
+    width: 990px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 8px;
+  }
 }
 
 #header {
@@ -174,14 +178,11 @@ button {
 #websiteAssist .contactText p {
   line-height: 18px; }
 
-/* ########################################################################### *
-/* ##### - NAVIGATION
-/* ########################################################################### */
+
 #nav {
   width: 990px;
   position: relative;
   z-index: 7000;
-  margin-bottom: 8px;
   &:focus {
     outline: none;
   }
@@ -335,7 +336,7 @@ button {
   background-color: #fff;
   color: #475057;
   z-index: 500;
-  // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   transition: $global-transition-duration;
   z-index: 5000;
   visibility: hidden;
@@ -400,15 +401,19 @@ button {
   margin-top: 6px; }
 
 #nav li .megadd ul.links > li:first-child {
-  margin-top: 0; }
+  margin-top: 0;
+}
 
-.clearfix:after {
-  visibility: hidden;
+.clearfix {
   display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
 }
 
 ///////////////////////////////////////////////////////////////////////////
@@ -597,5 +602,47 @@ main {
     font-size: 11px;
     color: #5f6a72;
     text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+#footer {
+  background-color: #c6c9cb;
+  min-width: 990px;
+  .margins {
+    width: 940px;
+    padding: 20px 25px;
+    margin: 0 auto;
+  }
+  .links {
+    float: left;
+    margin-left: 0 !important;
+    li {
+      font-size: 11px;
+      color: #475057;
+      padding: 0 15px;
+      margin: 0;
+      float: left;
+      line-height: 20px;
+      border-left: 1px solid #5f6a72;
+      &:first-child {
+        border-left: none;
+        padding-left: 0;
+      }
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .disclaimer {
+    clear: both;
+    margin-top: 20px;
+    color: #5f6a72;
+    line-height: 14px;
+    font-size: 10px;
   }
 }
