@@ -419,7 +419,6 @@
     </section>
   </main>
 
-
   <!-- Content HTML here -->
   <script src="js/main.min.js"></script>
 </body>

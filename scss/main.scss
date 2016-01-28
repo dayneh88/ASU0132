@@ -193,13 +193,6 @@ nav.main-nav {
   }
 }
 
-    /* line 918, scss/layout.scss */
-    nav.main-nav > ul.small-menu {
-       }
-      /* line 925, scss/layout.scss */
-      nav.main-nav > ul.small-menu.visible-menu {
-        display: block; }
-      /* line 929, scss/layout.scss */
       nav.main-nav > ul.small-menu .top-level-vertical-expand, nav.main-nav > ul.small-menu .top-level-side-expand, nav.main-nav > ul.small-menu .second-level-vertical-expand {
         width: 55px;
         height: 55px;
@@ -300,9 +293,11 @@ nav.main-nav {
             nav.main-nav > ul.small-menu .sub-menu a h3:hover {
               text-decoration: inherit;
               color: inherit; }
-    /* line 1031, scss/layout.scss */
+
+    
     nav.main-nav > ul > li {
-      float: none; }
+      float: left;
+    }
       /* line 1034, scss/layout.scss */
       nav.main-nav > ul > li .link-desc, nav.main-nav > ul > li .title h2 {
         display: none; }
@@ -325,9 +320,7 @@ nav.main-nav {
         nav.main-nav > ul > li > a:hover {
           color: #211e72; }
     @media (min-width: 62.81275em) {
-      /* line 1055, scss/layout.scss */
-      nav.main-nav > ul > li {
-        float: left; }
+
         /* line 1058, scss/layout.scss */
         nav.main-nav > ul > li .sub-menu {
           position: absolute;
