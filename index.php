@@ -407,7 +407,7 @@
   <main>
     <section>
       <h1>Making the future <strong>matter.</strong></h1>
-      <p>The same thing matters to all of us; making the most of the future. That’s why, on behalf of our two million members, we invest more than $90 billion. One of our latest and biggest investments is King’s Cross, and as of January 2016 we now hold a majority stake in the redevelopment. It’s one of the biggest infrastructure projects in the world and will define Londoners’ futures and as part-owners, will provide big benefits for our members in retirement.</p>
+      <p>The same thing matters to all of us; making the most of the future. That’s why, on behalf of our two million members, we invest more than $90 billion. One of our latest and biggest investments is King’s Cross, and as of January 2016 we now hold a majority stake in the redevelopment. It is one of the biggest city centre regeneration projects in Europe and will define Londoners’ futures and as part-owners, will provide big benefits for our members in retirement.</p>
       <a href="https://campaigns.australiansuper.com/itmatters/#/home" target="_blank" class="button">Find out more</a>
       <div class="london-svg">
         <?php include 'london-svg.php'; ?>
