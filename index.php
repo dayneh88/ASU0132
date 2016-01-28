@@ -23,8 +23,10 @@
           </ul>
           <ul class="clearfix">
             <li class="search clearfix">
-              <input type="text" class="text" placeholder="What are you looking for?" />
-              <input type="submit" value="Search" title="Search" class="button" />
+              <form action="http://www.australiansuper.com/search.aspx" method="get">
+								<input name="searchterm" type="text" class="text fn_hint fn_autocomplete_search ui-autocomplete-input" placeholder="What are you looking for?" title="What are you looking for?" />
+								<input type="submit" value="Search" title="Search" class="button" />
+							</form>
             </li>
           </ul>
         </div>
