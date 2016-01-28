@@ -13,490 +13,405 @@ button {
   transition: none;
 }
 
-//------------- HEADER
+.header-wrapper {
+  width: 990px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
 
-.header {
-  padding-top: 1.429em;
-  padding-bottom: 1.286em;
-  &.container {
-    max-width: 944px;
-    padding-left: 1.429em;
-    padding-right: 1.286;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    &:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-  }
-  .col-one {
-    width: 31.18254%;
+#header {
+  margin-bottom: 20px;
+  position: relative;
+  > a {
     float: left;
-    margin-right: 3.22619%;
-    margin-left: -2.143em;
-    text-align: left;
-  }
-  .col-two {
-    text-align: center;
-    position: relative;
-    height: 42px;
-    text-align: left;
-    height: auto;
-    width: 65.59127%;
-    float: right;
-    margin-right: 0;
-    margin-top: 0;
-  }
-  .logo {
-    display: inline-block;
-    z-index: 1000;
-    position: relative;
+    > img {
+      position: relative;
+      top: 12px;
+    }
   }
   #accessibleLinks li a {
     position: absolute;
     font-size: 11px;
-    left: -20000em;
+    left: -9999px;
+    &:hover,
+    &:focus,
+    &:active {
+      left: 0;
+    }
   }
-  .website-tools {
+  #websiteTools {
     float: right;
-    width: 538px;
-    left: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: auto;
-    top: 40px;
-    margin-top: -18px;
-    margin-left: -216.5px;
+    width: 540px;
     ul {
       float: right;
+      clear: both;
       li {
+        display: block;
         float: left;
-        margin-left: 8px;
+        margin-left: 10px;
+      }
+    }
+    a {
+      float: left;
+      height: 35px;
+      cursor: pointer;
+    }
+    .loggedIn {
+      margin-bottom: 10px;
+      li {
+        margin-left: 15px;
+        font-size: 11px;
+        color: #888;
+        a {
+          height: auto;
+        }
         &:first-child {
           margin-left: 0;
         }
       }
     }
-    .home a {
-      background: url($image-path + 'icon-home.svg');
-      background-size: cover;
-      width: 35px;
+    span {
       height: 35px;
-      display: inline-block;
-      text-indent: -20000em;
-      margin-bottom: 0;
-      &:hover {
-        background-position: 0 bottom;
-      }
+      position: absolute;
     }
-    .contact a {
-      background: url($image-path + 'icon-contact.svg');
-      background-size: cover;
-      width: 35px;
-      height: 35px;
-      display: inline-block;
-      text-indent: -20000em;
-      margin-bottom: 0;
-      &:hover {
-        background-position: 0 bottom;
-      }
+    .home a,
+    .contact a,
+    .email a,
+    .search .button {
+      background: url("https://www.australiansuper.com/css/images/bg_webToolsBtn_sprite.png") no-repeat scroll 0 0 transparent;
+      width: 36px;
+      text-indent: -9999px;
+      font-size: 1px;
+      line-height: 0;
     }
     .email a {
-      background: url($image-path + 'icon-email.svg');
-      background-size: cover;
-      width: 35px;
-      height: 35px;
-      display: inline-block;
-      text-indent: -20000em;
-      margin-bottom: 0;
-      &:hover {
-        background-position: 0 bottom;
-      }
+      background-position: -108px 0px;
     }
-    .search {
-      background: url("http://tools.australiansuper.com/income/site/wp-content/themes/australiansuper/assets/images/header-input.svg") transparent 0 bottom no-repeat;
-      background-size: 296px 72px;
-      position: relative;
-      width: 260px;
-      clear: none;
-      margin-left: 9px;
-      input[type="text"] {
-        background: none;
-        border: none;
-        box-shadow: none;
-        font-size: 12px;
-        font-style: italic;
-        height: 2.917em;
-        padding: 10px 40px 10px 15px;
-        margin-bottom: 0;
-        width: 100%;
-        box-sizing: border-box;
-        &:focus {
-          outline: none;
-        }
-      }
-      input[type="submit"] {
-        background: none;
-        border: none;
-        box-shadow: none;
-        font-size: 14px;
-        width: 2.571em;
-        height: 2.571em;
-        padding: 0;
-        background: url("http://tools.australiansuper.com/income/site/wp-content/themes/australiansuper/assets/images/web-tools.svg") transparent -5.143em 0 no-repeat;
-        background-size: 10.286em 5.143em;
-        text-indent: -20000em;
-        overflow: hidden;
-        display: inline-block;
-        position: absolute;
-        right: -1px;
-        top: 0;
-        cursor: pointer;
-        &:hover {
-          background-position: -5.143em bottom;
-        }
-      }
+    .contact a {
+      background-position: -36px 0;
     }
   }
 }
 
-nav.main-nav {
+
+#websiteTools .home a:hover,
+#websiteTools .home a:focus {
+  background-position: 0 -35px; }
+
+#websiteTools .contact a:hover,
+#websiteTools .contact a:focus {
+  background-position: -36px -35px; }
+
+#websiteTools .email a:hover,
+#websiteTools .email a:focus {
+  background-position: -108px -35px; }
+
+#websiteTools .search .button {
+  background-position: -72px 0px;
+  border: none;
+  height: 35px;
+  width: 36px;
+  cursor: pointer;
+  float: left; }
+
+#websiteTools .search .button:hover,
+#websiteTools .search .button:focus {
+  background-position: -72px -35px; }
+
+#websiteTools .search {
+  height: 35px;
+  background: url("https://www.australiansuper.com/css/images/bg_searchField.png") no-repeat 0px 0px; }
+
+#websiteTools .search .text {
+  margin-top: 9px;
+  margin-left: 15px;
+  font-size: 12px;
+  border: none;
+  background: none;
+  width: 245px;
+  float: left;
+  color: #475057;
+  appearance: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+#websiteTools .search .hint {
+  color: #666;
+  font-style: italic; }
+
+#websiteAssist {
+  float: right;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #5F6A72; }
+
+#websiteAssist .assistText {
+  float: left;
+  margin-top: 15px;
+  font-weight: bold; }
+
+#websiteAssist .contactIcon {
+  float: left; }
+
+#websiteAssist .contactIcon a {
+  background: url("https://www.australiansuper.com/css/images/bg_webToolsBtn_sprite.png") no-repeat -36px 0;
+  width: 36px;
+  height: 35px;
+  margin: 10px 20px;
+  float: left;
+  text-indent: -9999px; }
+
+#websiteAssist .contactIcon a:hover,
+#websiteAssist .contactIcon a:focus {
+  background-position: -36px -35px; }
+
+#websiteAssist .contactText {
+  float: right;
+  margin-top: 10px; }
+
+#websiteAssist .contactText p {
+  line-height: 18px; }
+
+/* ########################################################################### *
+/* ##### - NAVIGATION
+/* ########################################################################### */
+#nav {
   width: 990px;
-  margin: 0 auto 8px;
-  background-color: #f0f0f0;
-  &.jmenu-button {
-    color: white;
-  }
-  > ul {
-    background-color: white;
-    position: relative;
-    .sub-menu,
-    .sub-mega-menu {
-      display: none;
-    }
-    &.small-menu {
-      background-color: #5f6a72;
-      width: 100%;
-      float: left;
-      margin-right: 3.22619%;
-      display: inline;
-      display: none;
-      position: relative;
-      border-bottom: 1px solid #1c1c1c;
-      &.visible-menu {
-        display: block;
-      }
-    }
+  position: relative;
+  z-index: 7000;
+  margin-bottom: 8px;
+  &:focus {
+    outline: none;
   }
 }
 
-      nav.main-nav > ul.small-menu .top-level-vertical-expand, nav.main-nav > ul.small-menu .top-level-side-expand, nav.main-nav > ul.small-menu .second-level-vertical-expand {
-        width: 55px;
-        height: 55px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        cursor: pointer; }
-      /* line 938, scss/layout.scss */
-      nav.main-nav > ul.small-menu .top-level-vertical-expand {
-        background: url("http://tools.australiansuper.com/income/site/wp-content/themes/australiansuper/assets/images/arrow-white-down.png") #58626a 50% 50% no-repeat;
-        background: none, url("http://tools.australiansuper.com/income/site/wp-content/themes/australiansuper/assets/images/arrow-white-down.svg") #58626a 50% 50% no-repeat;
-        -moz-background-size: 12px 8px;
-        -o-background-size: 12px 8px;
-        -webkit-background-size: 12px 8px;
-        background-size: 12px 8px; }
-      /* line 943, scss/layout.scss */
-      nav.main-nav > ul.small-menu > li {
-        position: relative;
-        border-top: 1px solid #515a61;
-        padding-left: 2.143em;
-        padding-right: 2.143em; }
-        /* line 949, scss/layout.scss */
-        nav.main-nav > ul.small-menu > li:first-child {
-          border-top: none; }
-        /* line 953, scss/layout.scss */
-        nav.main-nav > ul.small-menu > li a {
-          padding: 18px 0;
-          min-height: 19px;
-          font-family: Arial, Helvetica, sans-serif;
-          font-weight: bold;
-          font-size: 1em;
-          line-height: 1.3em;
-          text-transform: none;
-          display: block;
-          color: #ffffff;
-          -moz-transition: color 85ms, ease-out;
-          -o-transition: color 85ms, ease-out;
-          -webkit-transition: color 85ms, ease-out;
-          transition: color 85ms, ease-out; }
-          /* line 24, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
-          nav.main-nav > ul.small-menu > li a:hover {
-            color: #cacfd3; }
-        /* line 965, scss/layout.scss */
-        nav.main-nav > ul.small-menu > li.jmenu-item-with-ul {
-          cursor: pointer; }
-          /* line 968, scss/layout.scss */
-          nav.main-nav > ul.small-menu > li.jmenu-item-with-ul.visible-sub-menu .sub-menu {
-            display: block; }
-        /* line 973, scss/layout.scss */
-        nav.main-nav > ul.small-menu > li.jmenu-item-with-mega-ul {
-          cursor: pointer;
-          overflow: hidden; }
-      /* line 979, scss/layout.scss */
-      nav.main-nav > ul.small-menu .sub-menu {
-        display: none;
-        background-color: #f4f5f6;
-        margin-left: -2.143em;
-        padding-left: 2.143em;
-        margin-right: -2.143em;
-        padding-right: 2.143em; }
-        /* line 984, scss/layout.scss */
-        nav.main-nav > ul.small-menu .sub-menu .jmenu-item-with-second-ul {
-          cursor: pointer;
-          position: relative; }
-        /* line 989, scss/layout.scss */
-        nav.main-nav > ul.small-menu .sub-menu li.col {
-          margin-left: -2.143em;
-          padding-left: 2.143em;
-          margin-right: -2.143em;
-          padding-right: 2.143em;
-          border-top: 1px solid #e9ebed; }
-        /* line 995, scss/layout.scss */
-        nav.main-nav > ul.small-menu .sub-menu ul.top-row li.col:first-child {
-          border-top: 1px solid #5f6a72; }
-        /* line 1000, scss/layout.scss */
-        nav.main-nav > ul.small-menu .sub-menu a {
-          display: block;
-          padding: 18px 0;
-          font-family: Arial, Helvetica, sans-serif;
-          font-size: 0.92857em;
-          line-height: 1.4em;
-          margin-left: 15px;
-          font-weight: normal;
-          color: #5f6a72; }
-          /* line 1008, scss/layout.scss */
-          nav.main-nav > ul.small-menu .sub-menu a:hover {
-            text-decoration: none;
-            color: #929da5; }
-          /* line 1012, scss/layout.scss */
-          nav.main-nav > ul.small-menu .sub-menu a h3 {
-            font-size: inherit;
-            color: inherit;
-            font-family: inherit;
-            font-weight: inherit;
-            line-height: inherit;
-            margin-bottom: 0; }
-            /* line 1019, scss/layout.scss */
-            nav.main-nav > ul.small-menu .sub-menu a h3:hover {
-              text-decoration: inherit;
-              color: inherit; }
+#nav > ul.nav {
+  float: left; }
 
-    
-    nav.main-nav > ul > li {
-      float: left;
-    }
-      /* line 1034, scss/layout.scss */
-      nav.main-nav > ul > li .link-desc, nav.main-nav > ul > li .title h2 {
-        display: none; }
-      /* line 1039, scss/layout.scss */
-      nav.main-nav > ul > li > a {
-        padding: 0 20px 0 15px;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        color: #555555;
-        text-decoration: none;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-        line-height: 1.3em;
-        display: inline-block;
-        font-weight: bold;
-        color: #555555;
-        letter-spacing: -0.02em; }
-        /* line 24, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
-        nav.main-nav > ul > li > a:hover {
-          color: #211e72; }
-    @media (min-width: 62.81275em) {
+#nav > ul.login {
+  float: right; }
 
-        /* line 1058, scss/layout.scss */
-        nav.main-nav > ul > li .sub-menu {
-          position: absolute;
-          left: 0px;
-          background-color: #ffffff;
-          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-          padding: 25px 30px 35px;
-          width: 100%;
-          z-index: 1000;
-          -moz-box-sizing: border-box;
-          -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-          /* line 1068, scss/layout.scss */
-          nav.main-nav > ul > li .sub-menu .top-row {
-            border-bottom: 1px solid #e5e5e5;
-            margin-bottom: 25px; }
-            /* line 1072, scss/layout.scss */
-            nav.main-nav > ul > li .sub-menu .top-row .col {
-              margin-bottom: 25px; }
-          /* line 1079, scss/layout.scss */
-          nav.main-nav > ul > li .sub-menu li.title {
-            display: block; }
-          /* line 1083, scss/layout.scss */
-          nav.main-nav > ul > li .sub-menu li h2 {
-            color: #211e72;
-            font-size: 26px;
-            font-weight: bold;
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #e5e5e5;
-            display: block;
-            font-family: Arial, Helvetica, sans-serif; }
-          /* line 1094, scss/layout.scss */
-          nav.main-nav > ul > li .sub-menu li.col {
-            width: 20%;
-            float: left;
-            padding-right: 20px;
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
-            /* line 1101, scss/layout.scss */
-            nav.main-nav > ul > li .sub-menu li.col a {
-              background: none; }
-              /* line 1104, scss/layout.scss */
-              nav.main-nav > ul > li .sub-menu li.col a:hover {
-                text-decoration: none; }
-                /* line 1107, scss/layout.scss */
-                nav.main-nav > ul > li .sub-menu li.col a:hover .link-title {
-                  text-decoration: underline; }
-            /* line 1113, scss/layout.scss */
-            nav.main-nav > ul > li .sub-menu li.col .link-title {
-              color: #475057;
-              font-size: 1.21429em;
-              line-height: 1.22353em;
-              font-weight: bold;
-              margin-bottom: 10px;
-              display: block;
-              font-family: Arial, Helvetica, sans-serif; }
-            /* line 1122, scss/layout.scss */
-            nav.main-nav > ul > li .sub-menu li.col .link-desc {
-              color: #475057;
-              font-size: 11px;
-              line-height: 16px;
-              display: inline; }
-        /* line 1132, scss/layout.scss */
-        nav.main-nav > ul > li:hover .sub-menu, nav.main-nav > ul > li:hover .sub-mega-menu, nav.main-nav > ul > li:hover .menu-title {
-          display: block; }
-        /* line 1137, scss/layout.scss */
-        nav.main-nav > ul > li:first-child {
-          background: none; }
-        /* line 1141, scss/layout.scss */
-        nav.main-nav > ul > li > a {
-          padding-top: 13px;
-          padding-bottom: 14px;
-          text-shadow: 1px 1px #ffffff; }
-        /* line 1153, scss/layout.scss */
-        nav.main-nav > ul > li#nav_super a.top-level-item {
-          width: 151px;
-          background: url("http://tools.australiansuper.com/income/site/wp-content/themes/australiansuper/assets/images/nav-main.png") transparent 0 0 no-repeat;
-          background: none, url("http://tools.australiansuper.com/income/site/wp-content/themes/australiansuper/assets/images/nav-main.svg") transparent 0 0 no-repeat;
-          -moz-background-size: 1094px 135px;
-          -o-background-size: 1094px 135px;
-          -webkit-background-size: 1094px 135px;
-          background-size: 1094px 135px; }
-          /* line 1157, scss/layout.scss */
-          nav.main-nav > ul > li#nav_super a.top-level-item:hover {
-            background-position: 0 -45px; }
-        /* line 1162, scss/layout.scss */
-        nav.main-nav > ul > li#nav_retirement a.top-level-item {
-          width: 120px;
-          background: url("http://tools.australiansuper.com/income/site/wp-content/themes/australiansuper/assets/images/nav-main.png") transparent -151px 0 no-repeat;
-          background: none, url("http://tools.australiansuper.com/income/site/wp-content/themes/australiansuper/assets/images/nav-main.svg") transparent -151px 0 no-repeat;
-          -moz-background-size: 1094px 135px;
-          -o-background-size: 1094px 135px;
-          -webkit-background-size: 1094px 135px;
-          background-size: 1094px 135px; }
-          /* line 1166, scss/layout.scss */
-          nav.main-nav > ul > li#nav_retirement a.top-level-item:hover {
-            background-position: -151px -45px; }
-        /* line 1170, scss/layout.scss */
-        nav.main-nav > ul > li#nav_employers a.top-level-item {
-          width: 130px;
-          background: url("http://tools.australiansuper.com/income/site/wp-content/themes/australiansuper/assets/images/nav-main.png") transparent -271px 0 no-repeat;
-          background: none, url("http://tools.australiansuper.com/income/site/wp-content/themes/australiansuper/assets/images/nav-main.svg") transparent -271px 0 no-repeat;
-          -moz-background-size: 1094px 135px;
-          -o-background-size: 1094px 135px;
-          -webkit-background-size: 1094px 135px;
-          background-size: 1094px 135px; }
-          /* line 1174, scss/layout.scss */
-          nav.main-nav > ul > li#nav_employers a.top-level-item:hover {
-            background-position: -271px -45px; }
-        /* line 1178, scss/layout.scss */
-        nav.main-nav > ul > li#nav_investments a.top-level-item {
-          width: 230px;
-          background: url("http://tools.australiansuper.com/income/site/wp-content/themes/australiansuper/assets/images/nav-main.png") transparent -401px 0 no-repeat;
-          background: none, url("http://tools.australiansuper.com/income/site/wp-content/themes/australiansuper/assets/images/nav-main.svg") transparent -401px 0 no-repeat;
-          -moz-background-size: 1094px 135px;
-          -o-background-size: 1094px 135px;
-          -webkit-background-size: 1094px 135px;
-          background-size: 1094px 135px; }
-          /* line 1182, scss/layout.scss */
-          nav.main-nav > ul > li#nav_investments a.top-level-item:hover {
-            background-position: -401px -45px; }
-        /* line 1186, scss/layout.scss */
-        nav.main-nav > ul > li#nav_tools a.top-level-item {
-          width: 168px;
-          background: url("http://tools.australiansuper.com/income/site/wp-content/themes/australiansuper/assets/images/nav-main.png") transparent -631px 0 no-repeat;
-          background: none, url("http://tools.australiansuper.com/income/site/wp-content/themes/australiansuper/assets/images/nav-main.svg") transparent -631px 0 no-repeat;
-          -moz-background-size: 1094px 135px;
-          -o-background-size: 1094px 135px;
-          -webkit-background-size: 1094px 135px;
-          background-size: 1094px 135px; }
-          /* line 1190, scss/layout.scss */
-          nav.main-nav > ul > li#nav_tools a.top-level-item:hover {
-            background-position: -631px -45px; }
-        /* line 1194, scss/layout.scss */
-        nav.main-nav > ul > li#nav_aboutUs a.top-level-item {
-          width: 86px;
-          background: url("http://tools.australiansuper.com/income/site/wp-content/themes/australiansuper/assets/images/nav-main.png") transparent -799px 0 no-repeat;
-          background: none, url("http://tools.australiansuper.com/income/site/wp-content/themes/australiansuper/assets/images/nav-main.svg") transparent -799px 0 no-repeat;
-          -moz-background-size: 1094px 135px;
-          -o-background-size: 1094px 135px;
-          -webkit-background-size: 1094px 135px;
-          background-size: 1094px 135px; }
-          /* line 1198, scss/layout.scss */
-          nav.main-nav > ul > li#nav_aboutUs a.top-level-item:hover {
-            background-position: -799px -45px; }
-        /* line 1202, scss/layout.scss */
-        nav.main-nav > ul > li#nav_login a.top-level-item {
-          width: 104px;
-          background: url("http://tools.australiansuper.com/income/site/wp-content/themes/australiansuper/assets/images/nav-main.png") transparent -886px 0 no-repeat;
-          background: none, url("http://tools.australiansuper.com/income/site/wp-content/themes/australiansuper/assets/images/nav-main.svg") transparent -886px 0 no-repeat;
-          background-size: 1094px 135px;
-          color: #ffffff;
-          line-height: 1;
-          font-size: 16px;
-          padding-left: 25px;
-          text-shadow: none;
-          padding-top: 15px;
-          padding-bottom: 14px;
-        }
-          /* line 1211, scss/layout.scss */
-          nav.main-nav > ul > li#nav_login a.top-level-item:hover {
-            background-position: -886px -45px; }
-          }
+#nav > ul > li {
+  float: left;
+}
 
-.clfx:before,
-.clfx:after {
-  content: "\0020";
+#nav > ul > li:hover > .megadd {
+  visibility: visible;
+  opacity: 1;
+}
+
+#nav > ul > li > a {
+  height: 45px;
   display: block;
-  height: 0;
+  text-indent: -9999px;
+  font-size: 1px;
+  background: url("https://www.australiansuper.com/css/images/bg_sprite_navigation2.png") no-repeat scroll 0 0 transparent; }
+
+#nav #nav_super,
+#nav #nav_super > a {
+  width: 151px;
+  background-position: 0 0; }
+
+#nav #nav_super > a:hover,
+#nav #nav_super > a:focus,
+#nav #nav_super:hover > a {
+  background-position: 0 -45px; }
+
+#nav #nav_super > a:active,
+#nav #nav_super.active > a {
+  background-position: 0 -90px; }
+
+#nav #nav_retirement,
+#nav #nav_retirement > a {
+  width: 120px;
+  background-position: -151px 0; }
+
+#nav #nav_retirement > a:hover,
+#nav #nav_retirement > a:focus,
+#nav #nav_retirement:hover > a {
+  background-position: -151px -45px; }
+
+#nav #nav_retirement > a:active,
+#nav #nav_retirement.active > a {
+  background-position: -151px -90px; }
+
+#nav #nav_employers,
+#nav #nav_employers > a {
+  width: 130px;
+  background-position: -271px 0; }
+
+#nav #nav_employers > a:hover,
+#nav #nav_employers > a:focus,
+#nav #nav_employers:hover > a {
+  background-position: -271px -45px; }
+
+#nav #nav_employers > a:active,
+#nav #nav_employers.active > a {
+  background-position: -271px -90px; }
+
+#nav #nav_investments,
+#nav #nav_investments > a {
+  width: 230px;
+  background-position: -401px 0; }
+
+#nav #nav_investments > a:hover,
+#nav #nav_investments > a:focus,
+#nav #nav_investments:hover > a {
+  background-position: -401px -45px; }
+
+#nav #nav_investments > a:active,
+#nav #nav_investments.active > a {
+  background-position: -401px -90px; }
+
+#nav #nav_tools,
+#nav #nav_tools > a {
+  width: 168px;
+  background-position: -631px 0; }
+
+#nav #nav_tools > a:hover,
+#nav #nav_tools > a:focus,
+#nav #nav_tools:hover > a {
+  background-position: -631px -45px; }
+
+#nav #nav_tools > a:active,
+#nav #nav_tools.active > a {
+  background-position: -631px -90px; }
+
+#nav #nav_aboutUs,
+#nav #nav_aboutUs > a {
+  width: 87px;
+  background-position: -799px 0; }
+
+#nav #nav_aboutUs > a:hover,
+#nav #nav_aboutUs > a:focus,
+#nav #nav_aboutUs:hover > a {
+  background-position: -799px -45px; }
+
+#nav #nav_aboutUs > a:active,
+#nav #nav_aboutUs.active > a {
+  background-position: -799px -90px; }
+
+#nav #nav_login,
+#nav #nav_login > a {
+  width: 104px;
+  background-position: -886px 0; }
+
+#nav #nav_login > a:hover,
+#nav #nav_login > a:focus,
+#nav #nav_login > a:active,
+#nav #nav_login:hover > a,
+#nav #nav_login.open a {
+  background-position: -886px -45px; }
+
+#nav #nav_login.active > a {
+  background-position: -990px 0; }
+
+#nav #nav_login.active > a:hover,
+#nav #nav_login.active > a:focus,
+#nav #nav_login.active > a:active,
+#nav #nav_login.active:hover > a,
+#nav #nav_login.active.open a {
+  background-position: -990px -45px; }
+
+/* ########################################################################### *
+/* ##### -- MEGA DROPDOWN
+/* ########################################################################### */
+#navbg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: #000;
+  z-index: 4000; }
+
+#nav li .megadd {
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  width: 930px;
+  padding: 25px 30px 35px 30px;
+  background-color: #fff;
+  color: #475057;
+  z-index: 500;
+  // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  transition: $global-transition-duration;
+  z-index: 5000;
   visibility: hidden;
+  opacity: 0;
 }
-.clfx:after {
+
+#nav li .megadd .columns {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 15px;
+  margin-top: 20px; }
+
+#nav li .megadd .columns:first-child {
+  margin-top: 0; }
+
+#nav li .megadd .columns .col {
+  width: 163px;
+  margin-right: 20px;
+  float: left; }
+
+#nav li .megadd .columns .col:last-child {
+  margin-right: 0; }
+
+#nav li .megadd h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #211e72;
+  margin-bottom: 15px; }
+
+#nav li .megadd h3 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #475057;
+  margin-bottom: 10px; }
+
+#nav li .megadd p {
+  font-size: 11px;
+  line-height: 16px; }
+
+#nav li .megadd a {
+  display: block;
+  text-decoration: none; }
+
+#nav li .megadd a:hover h3,
+#nav li .megadd a:focus h3,
+#nav li .megadd a:active h3 {
+  text-decoration: underline; }
+
+#nav li .megadd a:hover p,
+#nav li .megadd a:focus p,
+#nav li .megadd a:active p {
+  text-decoration: none; }
+
+#nav li .megadd ul.links {
+  margin-bottom: 0; }
+
+#nav li .megadd ul.links > li {
+  list-style-type: none !important;
+  background: url("https://www.australiansuper.com/css/images/bg_caret_links_medium.png") no-repeat 0 4px;
+  padding-left: 13px;
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 6px; }
+
+#nav li .megadd ul.links > li:first-child {
+  margin-top: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
   clear: both;
+  height: 0;
 }
+
+///////////////////////////////////////////////////////////////////////////
 
 strong {
   font-weight: 500;
@@ -511,6 +426,8 @@ main {
     font-size: 20px;
     font-family: $gotham;
     font-weight: 400;
+    width: 990px;
+    margin: 0 auto;
   }
   h1 {
     font-weight: 400;
@@ -637,5 +554,48 @@ main {
       background-color: white;
       color: #f87000;
     }
+  }
+}
+
+#footerLinks {
+  border-top: 1px solid #d1d1d1;
+  background: #ebebeb url("https://www.australiansuper.com/css/images/bg_footerLinks.png") repeat-x 0 0;
+  min-width: 990px;
+  .margins {
+    width: 940px;
+    padding: 25px 25px 30px 25px;
+    margin: 0 auto;
+  }
+  .col {
+    float: left;
+    width: 172px;
+    &.contact {
+      width: 224px;
+      li {
+        font-size: 11px;
+        color: #5f6a72;
+        strong {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  h2 {
+    font-size: 17px;
+    color: #5f6a72;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  li {
+    margin-top: 6px;
+    line-height: 18px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  a {
+    font-size: 11px;
+    color: #5f6a72;
+    text-decoration: none;
   }
 }
