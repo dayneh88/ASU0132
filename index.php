@@ -3,13 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title></title>
+  <title>AustralianSuper - Home</title>
   <meta name="description" content="" />
   <meta property="og:image" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/main.css" />
+  <link href="favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+  <script src="//cdn.optimizely.com/js/3171040109.js"></script>
 </head>
+
 <body>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-586SJB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>var dataLayer = [];(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-586SJB');</script>
+<!-- End Google Tag Manager -->
 
   <div class="header-wrapper">
     <div class="container">
@@ -297,7 +310,7 @@
         <div class="wheel"></div>
       </div>
       <div class="london-svg-static">
-        <img src="/media/london-svg-static.svg" alt="London">
+        <img src="media/london-svg-static.svg" alt="London">
       </div>
     </section>
   </main>
@@ -376,5 +389,38 @@
 
   <!-- Content HTML here -->
   <script src="js/main.min.js"></script>
+
+
+  <!-- SiteCatalyst code version: H.22.1.
+  Copyright 1996-2011 Adobe, Inc. All Rights Reserved
+  More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript">
+  s.pageName = "campaigns:takeover";
+  s.channel = "campaigns";
+  s.prop14 = "campaigns";
+  /* Conversion Variables */
+  /* Visitor Segmentation */
+  s.prop27 = "Retirement";
+  s.prop28 = "SelfService";
+  s.prop29 = "Industry";
+  s.prop30 = "NotSet";
+  /* Portal Tracking*/
+  s.prop5 = "";
+  s.prop6 = "";
+  s.prop31 = "";
+  /* Event Tracking*/
+  s.events = "";
+  s.eVar16 = "";
+  s.eVar13 = "";
+  /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+  var s_code = s.t(); if (s_code) document.write(s_code);</script>
+  <script language="JavaScript" type="text/javascript"><!--
+  if (navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+  //--></script><noscript><img src="https://metric.australiansuper.com/b/ss/aussupaustraliansuperdev/1/H.22.1--NS/0"
+  height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+  <!-- End SiteCatalyst code version: H.22.1. -->
+  <!-- End Omniture tracking variables -->
+
+
 </body>
 </html>
