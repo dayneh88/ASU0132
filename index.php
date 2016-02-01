@@ -330,7 +330,28 @@
 
         <div class="col awards">
           <h2>Our awards</h2>
-
+          <div class="awards-container">
+            <a href="http://www.australiansuper.com/about-us/our-awards.aspx">
+              <img src="https://www.australiansuper.com/~/media/Images/RatingsAwards/SR_10YearPlatinumSuper_180.ashx" alt="SuperRatings - 10 Year Platinum Performance Super">
+            </a>
+            <a href="http://www.australiansuper.com/about-us/our-awards.aspx">
+              <img src="https://www.australiansuper.com/~/media/Images/RatingsAwards/SR2016_PensionOTY_180.ashx" alt="SuperRatings - Pension of the Year"></a>
+            <a href="http://www.australiansuper.com/about-us/our-awards.aspx">
+              <img src="https://www.australiansuper.com/~/media/Images/RatingsAwards/BlueRibbon2015Super_edited_180.ashx" alt="AFR Blue Ribbon Super Fund of the Year">
+            </a>
+            <a href="http://www.australiansuper.com/about-us/our-awards.aspx">
+              <img src="https://www.australiansuper.com/~/media/Images/RatingsAwards/BlueRibbon2015Pension_edited_180.ashx" alt="AFR Blue Ribbon Best Pension Fund">
+            </a>
+            <a href="http://www.australiansuper.com/about-us/our-awards.aspx">
+              <img src="https://www.australiansuper.com/~/media/Images/RatingsAwards/CW2015_Super5_180.ashx" alt="Chant West">
+            </a>
+            <a href="http://www.australiansuper.com/about-us/our-awards.aspx">
+              <img src="https://www.australiansuper.com/~/media/Images/RatingsAwards/Heron_MySuper_180.ashx" alt="Heron MySuper">
+            </a>
+            <a href="http://www.australiansuper.com/about-us/our-awards.aspx">
+              <img src="https://www.australiansuper.com/~/media/Images/RatingsAwards/SelectingSuperAAA.ashx" alt="Selecting Super AAA">
+            </a>
+          </div>
         </div>
       </div>
     </div>

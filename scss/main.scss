@@ -610,6 +610,19 @@ main {
       text-decoration: underline;
     }
   }
+  .awards-container {
+    position: relative;
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
 }
 
 #footer {
