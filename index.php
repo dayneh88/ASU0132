@@ -28,7 +28,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="container">
       <div id="header" class="clearfix">
 
-        <a id="contentcontainer_0_homeLink" href="/"><img src="https://www.australiansuper.com/~/media/Images/Article%20images/DivisionLogos/AustralianSuper.ashx" alt="AustralianSuper" width="270" height="64" /></a>
+        <a id="contentcontainer_0_homeLink" href="https://www.australiansuper.com/"><img src="https://www.australiansuper.com/~/media/Images/Article%20images/DivisionLogos/AustralianSuper.ashx" alt="AustralianSuper" width="270" height="64" /></a>
 
         <div id="websiteTools" role="search">
           <ul class="loggedIn clearfix">
