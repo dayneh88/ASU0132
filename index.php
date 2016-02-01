@@ -281,7 +281,7 @@
             </div>
           </div></li>
         </ul><ul class="login clearfix">
-          <li id="nav_login"><a href="https://www.australiansuper.com:443/login.aspx" class="fn_nav_login" onclientclick="TrackSelfService(&#39;Login&#39;)">Log in</a></li>
+          <li id="nav_login"><a href="https://www.australiansuper.com/join" class="fn_nav_login">Join</a></li>
         </ul>
       </div>
     </div>
