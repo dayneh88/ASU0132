@@ -416,7 +416,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   var s_code = s.t(); if (s_code) document.write(s_code);</script>
   <script language="JavaScript" type="text/javascript"><!--
   if (navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
-  //--></script><noscript><img src="https://metric.australiansuper.com/b/ss/aussupaustraliansuperdev/1/H.22.1--NS/0"
+  </script><noscript><img src="https://metric.australiansuper.com/b/ss/aussupaustraliansuperdev/1/H.22.1--NS/0"
   height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
   <!-- End SiteCatalyst code version: H.22.1. -->
   <!-- End Omniture tracking variables -->
